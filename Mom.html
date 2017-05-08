@@ -1,83 +1,82 @@
-<!DOCTYPE html>
+<!DOCTYPE text>
 <html>
 <head>
 <style>
-.fade{
--webkit-animation-name:fade;
--webkit-animation-duration:15s;
-animation-name:fade;
-animation-duration: 15s;
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
 }
-
-@-webkit-keyframes fade
-{ from{opacity:0}
-  to{opacity:1}
+@-webkit-keyframes fade {
+  from {opacity: 0.1} 
+  to {opacity: 1}
 }
-@keyframes fade{ 
- from{opacity:0}
- to{opacity:1}
+@keyframes fade {
+  from {opacity: 0.1} 
+  to {opacity: 1}
 }
 </style>
 </head>
 
 <body>
-<div class="SL fade"
-style="text-align:center;">                                 
-<h1>Mom's Favorite pictures</h1>
-<img src="images\n7.jpg"
-width=800px height=400px>
-<h2>This is her favorite sea</h2>
-</div>                       
 
+<!-- <h1 style="text-align:center;">Mom's Favoritessssss Pics</h1> -->
 
-<div class="SL fade"
-style="text-align:center;">                                 
-<h1>Mom's Favorite pictures</h1>
-<img src="images\n8.jpg"
+<div class="SL fade" 
+style="text-align:center;" >
+<h1>Mom's Favorite Thing to do</h1>
+<img src="images\sleep.jpg" 
 width=800px height=400px>
-<h2>This is her favorite sea</h2>
+
+<h2>her favorite Time is sleeping.</h2>
+</div>
+
+<div class="SL fade" 
+style="text-align:center;" >
+<h1>Mom's Favorite Pics</h1>
+<img src="images\th.jpg" 
+width=800px height=400px>
+
+<h2>her favorite food is shrimp.</h2>
 </div>
 
 
-<div class="SL fade"
-style="text-align:center;">                                 
-<h1>Mom's Favorite pictures</h1>
-<img src="images\n9.jpg"
-width=800px height=400px>
-<h2>This is her favorite sea</h2>
+<div class="SL fade" 
+style="text-align:center;" >
+<h1>Mom's Favorite Pics</h1>
+<img src="images\running.jpg" 
+width=600px height=400px>
 </div>
 
-
 <div class="SL fade"
-style="text-align:center;">                                 
-<h1>Mom's Favorite pictures</h1>
-<img src="images\n10.jpg"
-width=800px height=400px>
-<h2>This is her favorite sea</h2>
+style="text-align:center;">
+<h1>I love you MOM</h1>
+<img src="images\son.jpg"
+width+600px height=500px>
 </div>
+
+<video width=100% controls loop >
+<source src="images\himom.mov"/>
+</video>
 
 
 <script>
 var slideIndex = 0;
-function showSlides () {
+function showSlides() {
 var i;
 var slides = document.getElementsByClassName("SL");
-for (i = 0; i <slides.length; i++) {
-    slides[i].style.display = "none";
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
 }
 slideIndex++;
-if (slideIndex>=slides.length)
-   {slideIndex = 0}
-slides[slideIndex].style.display = "block";
+if (slideIndex>=slides.length) 
+   {slideIndex = 0}    
+slides[slideIndex].style.display = "block";  
 setTimeout(showSlides, 4000);
 }
 slideIndex--;
 showSlides();
 </script>
 </body>
-</html>
-
-
-
-
-
+</html> 
